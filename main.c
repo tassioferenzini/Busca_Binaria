@@ -21,10 +21,10 @@ int buscar(int *a, int x, int inicio, int fim) {
         printf("\n%d", a[meio]);
     } else {
         if (a[meio] < x) {
-            printf("\n%d",a[meio]);
+            printf("\n%d", a[meio]);
             buscar(a, x, meio + 1, fim);
         } else {
-            printf("\n%d",a[meio]);
+            printf("\n%d", a[meio]);
             buscar(a, x, inicio, meio);
         }
     }
@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
 
     printf("Vetor = ");
     for (int t = 1; t <= 10; t++) {
-        printf("%d", a[t]);
+        printf("%d ", a[t]);
     }
 
     buscar(a, x, inicio, fim);
